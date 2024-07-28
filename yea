@@ -1,0 +1,143 @@
+<div class="video-background">
+  <div class="video-foreground">
+    <iframe src="https://www.youtube.com/embed/UhO_tvF0-Wc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<form class="submission-form"
+action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfl-Zgc9LOBNULwgTPfNWLV9BPxeRLWw7ZPtEcNAZzdweauxw/formResponse" method="POST" id="mG61Hd" target="dummyframe" onsubmit="return validateForm()">
+ 
+  <label for="first-name">
+    <h4>FIRST NAME</h4>
+  </label>
+  
+  <input type="text" id="first-name" name="entry.990684250" placeholder="UR NAME..." minlength="1" maxlength="30" required oninvalid="this.setCustomValidity('i know you may be nameless in the grand scheme of things and probably due to the fact that you cannot follow simple instructions but just put in whatever mfs be calling you')"
+       oninput="this.setCustomValidity('')"/>
+
+  
+  <label for="looking-for">
+    <h4>WHAT ARE YOU LOOKING FOR...</h4>
+  </label>
+  
+<input type="text" id="lookin-for" name="entry.177608463" placeholder="WAT U WANT..." minlength="1" maxlength="300" required oninvalid="this.setCustomValidity('ok dawg unless if you dont got a purpose in lyfe i know you want sum. money ? u dont want money ? do we got the first mf to hate money here ? congrats man, hmu in my dms, etransfer open')"
+       oninput="this.setCustomValidity('')"/>
+  <br />
+  
+<button type="submit" class="submit" id="submit">SUBMIT</button>
+
+<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%;
+  }
+}
+@media all and (max-width: 600px) {
+  .vid-info {
+    width: 50%;
+    padding: 0.5rem;
+  }
+  .vid-info h1 {
+    margin-bottom: 0.2rem;
+  }
+}
+@media all and (max-width: 500px) {
+  .vid-info .acronym {
+    display: none;
+  }
+}
+
+h4 {
+  text-shadow: 4px 4px #212121;
+}
+
+input[type=text], select {
+  width: 75%;
+  padding: 12px 20px;
+  margin: auto;
+  display: block;
+  border: 5px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #6B6B6B;
+    margin: 50px;
+    font-family: Arial;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.submission-form{
+  max-width:1520px;
+  margin:2rem auto;
+  padding:2rem;
+  label{
+    display:block;
+    padding:1rem 0 .25rem;
+    font-size:50px;
+    text-align: center;
+  }
+  input, textarea{
+    display:block;
+    width:100%;
+  }
+  
+}
+
+.submit {
+  width: 50%;
+  border: 5px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background:#FAFAFA;
+  padding: 12px 20px;
+  color:black;
+  margin:5rem auto;
+  display: block;
+  cursor:pointer;
+  &:hover{
+    background:#CFD8DC;
+    
+  }
+}
+</style>
