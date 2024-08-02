@@ -103,11 +103,23 @@ div {
   background:#FAFAFA;
   padding: 12px 20px;
   color:black;
-  margin:5rem auto;
+  margin:1rem auto;
   display: block;
   cursor:pointer;
+  text-align: center;
   &:hover{
     background:#CFD8DC;
-    
   }
+}
+.thanks {
+    margin:1rem auto;
+    font-size:20px;
+    text-align: center;
+    color: green;
+    text-shadow:
+    -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+    display: none;
 }
