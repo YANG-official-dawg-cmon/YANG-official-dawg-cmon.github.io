@@ -10,9 +10,9 @@
     <iframe src="https://www.youtube.com/embed/UhO_tvF0-Wc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
-<form class="submission-form"
-action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfl-Zgc9LOBNULwgTPfNWLV9BPxeRLWw7ZPtEcNAZzdweauxw/formResponse" method="POST" id="mG61Hd" target="dummyframe" onsubmit="return validateForm()">
- 
+<form name="submission-form" class="submission-form"
+action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfl-Zgc9LOBNULwgTPfNWLV9BPxeRLWw7ZPtEcNAZzdweauxw/formResponse" method="POST" id="mG61Hd" target="dummyframe" autocomplete="off">
+
   <label for="first-name">
     <h4>FIRST NAME</h4>
   </label>
@@ -26,11 +26,13 @@ action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfl-Zgc9LOBNULwgTPfNWLV9BPx
   </label>
   
 <input type="text" id="lookin-for" name="entry.177608463" placeholder="WAT U WANT..." minlength="1" maxlength="300" required oninvalid="this.setCustomValidity('ok dawg unless if you dont got a purpose in lyfe i know you want sum. money ? u dont want money ? do we got the first mf to hate money here ? congrats man, hmu in my dms, etransfer open')"
-       oninput="this.setCustomValidity('')"/>
-  <br />
+oninput="this.setCustomValidity('')"/>
+  <br/>
   
-<button type="submit" class="submit" id="submit">SUBMIT</button>
-
+<button type="submit" class="submit" id="submit" onclick="setTimeout(clearForm, 1)">SUBMIT</button>
+ 
+<p class="thanks" id="thanks">SUBMISSION SUCCESSFUL . TY .</p>
+  
 <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
 </form>
