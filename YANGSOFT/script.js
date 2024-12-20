@@ -6,7 +6,7 @@ function checkDeviceAndRedirect() {
         // Get the current page path
         const currentPage = window.location.pathname;
 
-        if (isMobile && !currentPage.endsWith('mobile.html')) {
+        if (isMobile && !currentPage.endsWith('mobileTest.html')) {
             // If the device is mobile and not already on mobile.html, redirect to mobile.html
             window.location.href = '/mobile.html';
         } else if (!isMobile && !currentPage.endsWith('pc.html')) {
@@ -19,7 +19,7 @@ function checkDeviceAndRedirect() {
     } catch (error) {
         console.error('Error occurred during redirection check:', error);
         // Fallback to mobile.html in case of an error or undetected device
-        window.location.href = '/mobile.html';
+        window.location.href = '/mobileTest.html';
     }
 }
 
