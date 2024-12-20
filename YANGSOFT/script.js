@@ -13,10 +13,10 @@ function checkDeviceAndRedirect() {
 
     if (isMobile && isIndexPage) {
         // If on mobile device and on index page, redirect to mobile
-        window.location.href = 'https://haveuseenhim.com/YANGSOFT/mobile.html';
+        window.location.href = 'https://www.google.com/';
     } else if (!isMobile && isMobilePage) {
         // If on desktop and on mobile page, redirect to index
-        window.location.href = 'https://haveuseenhim.com/YANGSOFT/pc.html';
+        window.location.href = 'https://langara.ca/admissions/after-you-apply/index.html';
     } else {
         // If no redirect is needed, proceed with normal page load
        window.location.href = 'https://www.youtube.com/';
