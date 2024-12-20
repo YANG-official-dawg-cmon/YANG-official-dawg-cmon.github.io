@@ -23,13 +23,4 @@ function checkDeviceAndRedirect() {
     }
 }
 
-// Function to bring elements forward, excluding YangSoft browser
-function bringForward(element) {
-    if (element !== yangSoftBrowser) {
-        zIndexCounter++;
-        element.style.zIndex = zIndexCounter;
-    }
-}
-
-
 document.addEventListener("DOMContentLoaded", checkDeviceAndRedirect);
