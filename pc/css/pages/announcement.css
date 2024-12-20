@@ -12,12 +12,12 @@
     --save-button-top: 46.1%; /* Top position of the save button */
     --save-button-left: 39%; /* Left position of the save button */
 
-    --announcement-container-top: 5vh; /* Vertical position */
-    --announcement-container-left: calc(50% - 42%); /* Horizontal position */
+    --announcement-container-top: 10vh; /* Vertical position */
+    --announcement-container-left: calc(50% - 37%); /* Horizontal position */
     --announcement-container-width: var(--announcement-popup-width); /* Width */
     --announcement-container-height: auto; /* Height, can be adjusted if needed */
 
-    --announcement-popup-top: 5vh; /* Vertical position */
+    --announcement-popup-top: 10vh; /* Vertical position */
     --announcement-popup-left: 0vw; /* Horizontal position */
     --announcement-popup-height: auto; /* Height, can be adjusted if needed */
     --announcement-popup-width: 80vw; /* Width of the announcement container relative to viewport width */
@@ -25,14 +25,16 @@
 
 #announcement-container {
     position: relative;
-    top: 0; /* Changed from var(--announcement-container-top) since parent handles positioning */
-    width: 100%; /* Take full width of parent */
-    aspect-ratio: var(--announcement-aspect-ratio);
-    margin: 0 auto;
-    background: url('/pc/media-files/images/page-sprites/YANGsoftFRAME.png') no-repeat center center;
-    background-size: contain;
-    pointer-events: none;
+    top: var(--announcement-container-top); /* Use variable for top position */
+    left: var(--announcement-container-left); /* Use variable for left position */
+    width: var(--announcement-container-width); /* Use variable for width */
+    aspect-ratio: var(--announcement-aspect-ratio); /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the container */
+    background: url('/pc/media-files/images/page-sprites/YANGsoftFRAME.png') no-repeat center center; /* Set background image */
+    background-size: contain; /* Ensure the image fits within the container */
+    pointer-events: none; /* Make the container itself non-interactive */
 }
+
 #announcement-container > #announcement-hitbox,
 #announcement-container > #foreground-image-container,
 #announcement-container > #close-button,
@@ -59,7 +61,7 @@
     z-index: 3; /* Ensure it's on top */
     background-color: transparent;
     color: white;
-    font-family: "Courier New", Courier, "Lucida Console", "MS Sans Serif", "System", sans-serif;
+    font-family: Arial, sans-serif;
     font-size: var(--announcement-close-button-font-size); /* Use the defined font size */
     padding: 0.1vw; /* Use viewport width for padding to scale with size */
     cursor: pointer;
@@ -108,17 +110,14 @@
 
 #announcement-popup {
     position: fixed;
-    top: var(--announcement-popup-top);
-    /* Center horizontally using these three properties */
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0 auto;
-    width: var(--announcement-popup-width);
-    height: var(--announcement-popup-height);
-    aspect-ratio: var(--announcement-aspect-ratio);
+    top: var(--announcement-popup-top); /* Use variable for top position */
+    left: var(--announcement-popup-left); /* Use variable for left position */
+    width: var(--announcement-popup-width); /* Use variable for width */
+    height: var(--announcement-popup-height); /* Use variable for height */
+    aspect-ratio: var(--announcement-aspect-ratio); /* Maintain aspect ratio */
     background-size: contain;
-    z-index: 2;
-    display: none;
-    pointer-events: none;
+    z-index: 2; /* Ensure it's on top */
+    display: none; /* Ensure it is hidden by default */
+    pointer-events: none; /* Make the popup itself non-interactive */
 }
 
