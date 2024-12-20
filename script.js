@@ -30,3 +30,5 @@ function bringForward(element) {
         element.style.zIndex = zIndexCounter;
     }
 }
+
+<script>document.addEventListener("DOMContentLoaded", checkDeviceAndRedirect);</script>
