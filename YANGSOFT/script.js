@@ -8,8 +8,8 @@ function checkDeviceAndRedirect() {
     
     // Get current page
     const currentPage = window.location.pathname;
-    const isIndexPage = currentPage.endsWith('haveuseenhim.html') || currentPage === '/';
-    const isMobilePage = currentPage.endsWith('PICTUREPERFECT.html');
+    const isIndexPage = currentPage.endsWith('pc.html') || currentPage === '/';
+    const isMobilePage = currentPage.endsWith('mobile.html');
 
     if (isMobile && isIndexPage) {
         // If on mobile device and on index page, redirect to mobile
