@@ -13,7 +13,7 @@
     --save-button-left: 39%; /* Left position of the save button */
 
     --announcement-container-top: 10vh; /* Vertical position */
-    --announcement-container-left: calc(50% - 29.5%); /* Horizontal position */
+    --announcement-container-left: calc(50% - 34%); /* Horizontal position */
     --announcement-container-width: var(--announcement-popup-width); /* Width */
     --announcement-container-height: auto; /* Height, can be adjusted if needed */
 
