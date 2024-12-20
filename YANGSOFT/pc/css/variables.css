@@ -1,0 +1,10 @@
+:root {
+    /* desktop variables */
+    --browser-width: 130vh;
+    --browser-height: 85vh;
+    --min-screen-width: 768px;
+    --min-screen-height: 503px;
+    --internet-blue: #000080;
+    --taskbar-blue: #245FDD;
+    --browser-gray: #BFC0C2;
+}

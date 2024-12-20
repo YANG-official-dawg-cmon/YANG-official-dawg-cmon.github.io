@@ -1,0 +1,7 @@
+#bottom-bar {
+    background-color: var(--browser-gray);
+    width: var(--browswer-width);
+}
+#bottom-bar-png {
+    width: var(--browser-width);
+}
