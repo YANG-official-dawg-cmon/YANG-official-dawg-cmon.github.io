@@ -8,7 +8,7 @@ function checkDeviceAndRedirect() {
 
         if (isMobile && !currentPage.endsWith('mobileTest.html')) {
             // If the device is mobile and not already on mobile.html, redirect to mobile.html
-            window.location.href = '/mobile.html';
+            window.location.href = '/mobileTest.html';
         } else if (!isMobile && !currentPage.endsWith('pc.html')) {
             // If the device is not mobile and not already on pc.html, redirect to pc.html
             window.location.href = '/pc.html';
