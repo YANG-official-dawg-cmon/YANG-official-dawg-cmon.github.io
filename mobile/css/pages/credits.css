@@ -1,0 +1,8 @@
+main p {
+    margin-top: 3vh;
+}
+
+main a {
+    color: var(--purple);
+    text-decoration: underline;
+}
