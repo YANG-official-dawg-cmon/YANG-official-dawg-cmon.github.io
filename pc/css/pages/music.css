@@ -88,7 +88,7 @@
 
 #music-content-box ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Dynamic columns with minimum width */
+    grid-template-columns: repeat(3, 1fr); /* Dynamic columns with minimum width */
     gap: 2vw; /* Space between items */
     padding: 0;
     margin: 0;

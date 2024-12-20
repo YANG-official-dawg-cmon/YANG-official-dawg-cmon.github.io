@@ -5,7 +5,7 @@ function proceedWithNormalLoad() {
         document.getElementById("loading-screen").style.display = "none";
         document.getElementById("desktop-content").style.display = "block";
         document.body.style.display = "block";
-    }, 1); // Your existing duration is 2190
+    }, 2910); // Your existing duration is 2190
 }
 
 proceedWithNormalLoad();
@@ -294,10 +294,6 @@ announcementCloseButton.addEventListener('click', function () {
     announcementPopup.style.display = 'none';
 });
 
-announcementPopup.addEventListener("mousedown", function() {
-    bringForward(announcementPopup);
-});
-
 saveButton.addEventListener('click', function() {
     window.open('https://distrokid.com/hyperfollow/yang16/picture-perfect--4', '_blank');
 });
@@ -427,24 +423,9 @@ tourCloseButton.addEventListener('click', () => {
 
 
 let zIndexCounter = 3;
-merchPopup.addEventListener("mousedown", function() {
-    bringForward(merchPopup);
-});
-aboutPopup.addEventListener("mousedown", function() {
-    bringForward(aboutPopup);
-});
-musicBrowser.addEventListener("mousedown", function() {
-    bringForward(musicBrowser);
-});
-videosBrowser.addEventListener("mousedown", function() {
-    bringForward(videosBrowser);
-});
-tourPopup.addEventListener("mousedown", function() {
-    bringForward(tourPopup);
-});
-announcementPopup.addEventListener("mousedown", function() {
-    bringForward(announcementPopup);
-});
+
+
+
 
 function bringForward(element) {
     zIndexCounter++;
@@ -543,3 +524,48 @@ function closeCredits() {
 document.getElementById("credits-btn").addEventListener("click", function() {
     credits.style.display = "flex";
 })
+
+
+merchPopup.addEventListener("mousedown", function() {
+    bringForward(merchPopup);
+});
+aboutPopup.addEventListener("mousedown", function() {
+    bringForward(aboutPopup);
+});
+musicBrowser.addEventListener("mousedown", function() {
+    bringForward(musicBrowser);
+});
+videosBrowser.addEventListener("mousedown", function() {
+    bringForward(videosBrowser);
+});
+tourPopup.addEventListener("mousedown", function() {
+    bringForward(tourPopup);
+});
+announcementPopup.addEventListener("mousedown", function() {
+    bringForward(announcementPopup);
+});
+credits.addEventListener("mousedown", function() {
+    bringForward(credits);
+});
+
+merchButton.addEventListener("mousedown", function() {
+    bringForward(merchPopup);
+});
+aboutButton.addEventListener("mousedown", function() {
+    bringForward(aboutPopup);
+});
+document.getElementById("music-btn").addEventListener("mousedown", function() {
+    bringForward(musicBrowser);
+});
+document.getElementById("videos-btn").addEventListener("mousedown", function() {
+    bringForward(videosBrowser);
+});
+tourBtn.addEventListener("mousedown", function() {
+    bringForward(tourPopup);
+});
+newsBtn.addEventListener("mousedown", function() {
+    bringForward(announcementPopup);
+});
+document.getElementById("credits-btn").addEventListener("mousedown", function() {
+    bringForward(credits);
+});

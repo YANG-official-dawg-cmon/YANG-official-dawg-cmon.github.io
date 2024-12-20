@@ -144,6 +144,7 @@ main#web-browser-content{
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     height: var(--browser-height);
     min-height: var(--min-screen-height);
     border-left: 1vh solid var(--browser-gray);

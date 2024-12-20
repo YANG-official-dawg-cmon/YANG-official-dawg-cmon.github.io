@@ -101,7 +101,7 @@
 #content-box p {
     font-family: 'Courier New', Courier, monospace; /* Monospaced font */
     font-size: 0.825vw; /* Scales font size with viewport width */
-    line-height: 1.2; /* Set line spacing */
+    line-height: 1; /* Set line spacing */
     color: #000; /* Text color */
     font-weight: bolder;
     margin: 0; /* Remove default margins */
