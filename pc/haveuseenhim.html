@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+
+    <script src="/script.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    
+
+    <title>YANGsoft Internet Explorer</title>
+</head>
+<body style="display: none;">
+    <div id="loading-screen">
+        <img src="media-files/loading-screen/PC_LOGO_SPIN.gif" alt="Loading GIF" id="loading-gif">
+        <div class="xp-loading-animation">
+            <div class="xp-loading-bar"></div>
+        </div>
+    </div>
+
+    <div id="desktop-content">
+        <button id="yangSoft-btn" class="desktop-btn">
+            <img draggable="false" src="media-files/images/page-sprites/MAIN SITE.png" alt="">
+            <p>yangSoft</p>
+        </button>
+        <button id="news-btn" class="desktop-btn">
+            <img draggable="false" src="media-files/images/page-sprites/NEWS.png" alt="">
+            <p>news</p>
+        </button>
+        <button id="credits-btn" class="desktop-btn">
+            <img draggable="false" src="media-files/images/page-sprites/CREDITS.png" alt="">
+            <p>credits</p>
+        </button>
+
+
+        <div id="yangSoft-web-browser" class="page" class="pseudobrowser">
+
+            <div id="yangSoft-top-bar">
+                <img src="media-files/images/page-sprites/yangSoft-browser-parts/yangSoft-top-bar.png" alt="" draggable="false" id="yangSoft-top-bar-img">
+                <p id="yangSoft-top-bar-x">X</p>
+            </div>
+
+            <img src="/pc/media-files/images/page-sprites/yangSoft-browser-parts/yangSoft-address-box.png" alt="" id="address-box" draggable="false">
+
+
+            <main id="web-browser-content">
+                <div class="section" id="haveuseenhim"></div>
+                <div class="section" id="pictureperfect"></div>
+                <div class="section" id="menu">
+                    <main>
+                        <ul>
+                            <li class='menu-button' id="music-btn">MUSIC</li>
+                            <li class='menu-button' id="videos-btn">VIDEOS</li>
+                            <li class='menu-button' id="tour-btn">TOUR</li>
+                            <li class='menu-button' id="merch-btn">MERCH</li>
+                            <li class='menu-button' id="about-btn">ABOUT</li>
+                        </ul>
+                    </main>
+                </div>
+            </main>
+
+            <div id="bottom-bar">
+                <img src="media-files/images/page-sprites/yangSoft-browser-parts/yangSoft-bottom-bar.png" alt="" draggable="false" id="bottom-bar-png">
+            </div> 
+        </div>
+
+        <div id="announcement-popup" style="display: flex;">
+            <div id="announcement-container">
+                <div id="announcement-hitbox"></div>
+                <div id="foreground-image-container"></div>
+                <div id="close-button">X</div>
+                <div id="save-button">Save</div>
+                <div id="announcement-top-bar"></div>
+            </div>
+        </div>
+    </div>
+
+        <div id = "pages">
+            <div id="credits" class="pseudobrowser">
+                <div id="credits-hitbox"></div>
+                    <!-- Top Bar -->
+                    <div id="credits-top-bar">
+                        <div id="credits-minimize-button1">O</div>
+                        <div id="credits-minimize-button2">O</div>
+                        <div id="credits-close-button">X</div>
+                    </div>
+                
+                    <!-- Content Box with Text -->
+                    <div id="content-box">
+                        <p>This website was designed by <a href="">@kevin yang</a>, and programmed by <a href="">@aengelo vargas</a> and <a href="">@anshul sonone</a>
+                        </p>
+                    </div>
+            </div>
+
+            <div id="music" class="pseudobrowser">
+                <!-- Top Bar -->
+                <div id="music-top-bar">
+                    <div id="music-min-button1">O</div>
+                    <div id="music-min-button2">O</div>
+                    <div id="music-close-button">X</div>
+                </div>
+            
+                <!-- Content Box with Text -->
+                <div id="music-content-box">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="media-files/images/album-covers/cubanos.jpeg" alt="">
+                                <p>cubanos.single</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="media-files/images/album-covers/lookin-for.jpeg" alt="">
+                                <p>lookin-for.single</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="media-files/images/album-covers/money-worth.jpeg" alt="">
+                                <p>money-worth.single</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="media-files/images/album-covers/picture-perfect.jpeg" alt="">
+                                <p>picture-perfect.single</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="tour-popup" class="pseudobrowser">
+                <div id="tour-hitbox"></div>
+                <div id="tourTop-bar">
+                    <div id="tour-close-button"></div>
+                </div>
+                <div id="tour-content-box">
+                    <!-- Line 1: "YANGsoft YANGdows" -->
+                    <p id="line1" class="line">YANGsoft YANGdows [ Version 0.0.1 ]</p>
+                    
+                    <!-- Line 2: Copyright text -->
+                    <p id="line2" class="line">Copyright &copy; 2009 HAVEUSEENTHEM ? Corporation, All rights given to my two cats</p>
+                    <br>
+                    
+                    <!-- Line 3: Command line with a spinner -->
+                    <p id="line3">
+                        <span id="path" class="tour-text">C:\Users\Guest&gt; </span>
+                        <span id="command" class="tour-text">ping tour_dates.calander</span>
+                        <span id="spinner" class="tour-text">/</span>
+                    </p>
+                    <br>
+                    
+                    <!-- Event layout -->
+                    <div id="event-container">
+                        <div class="event" id="event1">
+                            <a href="JOKES" target="_blank" class="event-link">JOKES</a>
+                            <p class="tour-text">Boov, A</p>
+                            <p class="tour-text">7.21.24</p>
+                        </div>
+                        <br>
+                        <div class="event" id="event2">
+                            <a href="ON" target="_blank" class="event-link">ON</a>
+                            <p class="tour-text">KACHOW, COLD</p>
+                            <p class="tour-text">8.10.24</p>
+                        </div>
+                        <br>
+                        <div class="event" id="event3">
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="event-link">YOU</a>
+                            <p class="tour-text">Frogballz, SUNDAY</p>
+                            <p class="tour-text">10.02.24</p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+
+            <div id="about-popup" class="pseudobrowser">
+                <div id="about-hitbox"></div>
+                    <!-- Top Bar -->
+                    <div id="aboutTop-bar">
+                        <div id="minimize-button1">O</div>
+                        <div id="minimize-button2">O</div>
+                        <div id="about-close-button">X</div>
+                    </div>
+                
+                    <!-- Content Box with Text -->
+                    <div id="content-box" contenteditable="true" spellcheck="false">
+                        <p>im YANG . i was born on my birthday and by my parents but i think my mom did most
+of the work on that. i used 2  live in china . now i live in canada. i make music
+and other things like music videos or food .
+
+go listen 2 my music if you want 2, the videos coo 
+
+i got 2 cats, at times. sometimes ion see them
+
+ive dropped my sm7b 4 times now and honestly it still works quite well
+                
+my carbon monoxide detector doesnt work sometimnes
+
+id like 2 sell out a venue... does anyone know any connections for me to do just that
+                
+if one of you reading this happesn to be my favorite artists just hmu on insta
+or sum we can grab a bite. yea ?
+
+i like 2 space out my punctuations , but only some of them. like dis .
+                        </p>
+                    </div>
+            </div>
+
+
+            <div id="videos" class="pseudobrowser">
+                <!-- Top Bar -->
+                <div id="videos-top-bar">
+                    <div id="videos-top-right-bar">
+                        <div id="videos-min-button1">O</div>
+                        <div id="videos-min-button2">O</div>
+                        <div id="videos-close-button">X</div>
+                    </div>
+                    <div id="videos-top-bar-general"></div>
+                    <div id="videos-left-of-top-right-bar"></div>
+                    <div id="videos-bottom-left-top-bar"></div>
+        
+                </div>
+                
+            
+                <!-- Content Box with Text -->
+                <div id="videos-content">
+                    <ul id="videos-list">
+                        <li><a href=""><img src="/pc/media-files/images/video-thumbnails/a-cold-sunday.JPG" alt=""> <p>a-cold-sunday.mov</p> </a></li>
+                        <li><a href=""><img src="/pc/media-files/images/video-thumbnails/cubanos.jpeg" alt=""> <p>cubanos.mov</p> </a></li>
+                        <li><a href=""><img src="/pc/media-files/images/video-thumbnails/lookin-for.jpeg" alt=""> <p>lookin-for.mov</p> </a></li>
+                        <li><a href=""><img src="/pc/media-files/images/video-thumbnails/money-worth.jpeg" alt=""> <p>money-worth.mov</p> </a></li>
+                        <li><a href=""><img src="/pc/media-files/images/video-thumbnails/picture-pefect.jpeg" alt=""> <p>picture-perfec.mov</p> </a></li>
+        
+                    </ul>
+                </div>
+            </div>
+
+
+            <audio id="audio-player" src="/pc/media-files/audio/MerchErrorSound.mp3" preload="auto"></audio>
+            <!-- Merch Popup -->
+            <div id="merch-popup" class="pseudobrowser">
+                <div id="merch-hitbox"></div>
+                <div id="merchTop-bar">
+                    Local Disk (C:)
+                    <div id="merch-close-button">X</div>
+                </div>
+                <div class="ok-button"></div>
+            </div>
+        </div>
+
+        <footer id="taskbar">
+            <div class="taskbar-content">
+                <!-- Youtube APP -->
+                <div class="taskbar-app">
+                    <a href="https://www.youtube.com/@YANG-official" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 15 16">
+                            <image width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAACyklEQVQokT2TO4hcVRjHf+dx7+yMGxPch+sGFx9RhCARRUFBAkJQVBA7C0XFNGnEShFEBFFBLMTCgKWWaiFaKCwWFmmCpFSMromTdeexO7Nmdu45556X3Lviga84xff//b+XyDlz4cfNvLEGCx2BrT0pBpKvidbirMNZS20N87llMJqyOxjw6odfCHHhh6/yw6cs/T9/oz/pMTE9hFRIqRBIslCAIGfoLh7l0UceQHeP8POX7yH2Ln+TR1ubXLy6Tv+fJZSKGFNhjMUag7Wm/VdVxXg0Zm2pywdvP88dd/WQvU7J74MFfvm7S0cbgp2Q4gFgkKpG6dBGpwPrtxzj8pUxn5z/ljzZQzufGV5XxDBnMrU4H6i9x9U1tq7xdU3wnuY15WxsrPHr1oD+lT7ah0QMif3JLkpH6uBbgRAjSQiEEMiiQDbZOVP7GUWhqMwcnUKkspbheI8jiyUhZ7JSSKUolOIwJ5NDaHvgQ6AsFcEZZAweHyI7gx1MXR/SZNNlQcq5deCcawE+RoTUbfdrN0dbYynKbkto6pQ5I0IAKQ9FGmqM0NhvHElBImPMDB29Q6uiJRRlQWrm29j9z4FobAsBKbVCjYBvFii1oMSDD93LeDTF1Z6yLFBaoQuNakLJ/0NryWBcsb7cYfmmEv3HVp8nXnyDd98ccf7z7+hvTyi63ZYqtW7JZMgpE63n5J2LnH3ubnK8im7sxjDl5sXEC0/fz9RlgrGUHQ05klLEWodxjht7ipWjmun+AeVCRFz6/qO8G2/gzFPnOPfSM3z62eukvQl/bW8zuz4jREdZRJZXSi5eusbLr/3E8pLn64/vQ92+dOydk/essnr8Vs6cPsWJ21aYHUwZDoeM98ZU1RSlarRq5u1x8yFPPnYcpju0J/nWK8/mx0+fYLhfsX1tgMgJrQU5eWKo2z1wLtDrFqytLnAwM5x9f1P8C3L1nJHGxCYMAAAAAElFTkSuQmCC"/>
+                        </svg>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+                <!-- Instagram APP -->
+                <div class="taskbar-app">
+                    <a href="https://www.instagram.com/idkevinyang/?hl=en" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                            <image width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADU0lEQVQ4jR2TS09cZQBAz30Mw8BQZjoMAxSYAGUk8rDUiihqFTWp6cO4MfGRLnThxvgTTHcmTePCnSaaaGIwxsZofWBC1GpcGF9tCkUsA5RHoC3M485l7v2+7977mfbsz9kdQ2vNheNP6uiEy+fJ95icm2GAXzDTPSSScbRponxJ3fUol12Wb1fYrZRJtHTz3ZU/DPvs2Cn9UecyK6+d4MflUQ4tfEu/nSXIZIg1NWJZMQIliQnB17/Oc/HqGqmOLBn3GqePPabtRGkRe3QQISRhrYYUoMIQd6+MVQEME6ki2lsO4OkYOgroTPaR6hnH3L2OXS87sL2BFAEb+5qbxRIZY5H+R5+jobUZ6fkEnmC7uIbc2cLQih2xhblWpDUCK59tObff1cuClyUsVkns3WBk6ihFq53LTh/LjQVkGHIwl8G2LUbz3Qy1Jeg0JWWdxJh5/x296Bs4CxW6EttMnjrNh5/N8vEX3zN19k3a+rv46vzbHD+cZ+bTT8h2deG5NcLA4bef/8J669UXz00/NM7hkQITzz7P3Owc5y+8S6q7m/aUptXzKAwP88OliyinwskzLxBvTBA3JBsrG9jlUpljuRy9uQJowTezP0GiHVu7WDfrRGu3aMgaTL/8Clc2Nlid/5u+kVEqd3ZwaxVsw9RUK3vQsEWkAmImIKoEIs325ir10KJSvEXvyTOkcz3UalUIBUp4RKHAFFIShZIwCLjL4xNHIFK4dcVObZWVyhJWR4Z/5/8kYwQ0NzVRd8r4vouSAjsMNVEQInyPhniCI/cP8swjE/y+XiE9WCCZOYB3e5Oe/Sr9qWa0qdivlVDSIwjCu4GQMFAo6WPZMfoKgzz98BiplnW8ZAarsRFhWbRlDzI8NkQm3UK5XEL6dcJAYgdKEUiB4XtoHZHpaOfByQkcx2FtbZH6pkc2leaJ6SkeODqG41S55yhJqAS265QRnoMRb8YgwrRsBgoDWKbmv6UbeJ4gnz/EfcNDhKFAyggpJf5+Fc/Zw762DgP/XKZ3/Cl0UzO2bWNZFvm+DnK5FFEUEo83YNoRyqsiPQ/h17mzdJXrS7vc2/mNl17XIzmXdFsWsyGOaVnEbBvDNNFRhFIKFUikUPiej+uUKG6HfPDlJeN/epy05EyjkhMAAAAASUVORK5CYII="/>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <!-- Twitter APP -->
+                <div class="taskbar-app">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+                        <image width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC0UlEQVQ4jV2Ty2tcVRzHP+dx78zNzXSm6ZChIS1tLA3FLtSiiKiLIqUKduljI9KC0IUu3LhwqQv7F3TVunAjtAuVRhBRCwrZGNRaxFlYxsZ2yGSadCbzuI/zkLmTiPrdnMXh+zu/7+MI7z1nV1r+xPE5NoYS4yxbmSeUMBdIvAcPCKanQ1CPBBvdIdeeawhx9vM//KlzS6zd6nG7l5E4OFoJSI3j3tjSiNQ/5Aky62kowenH5vh1rYO4eLvnmx6+bfaQkeLyySqvLUQMcscbtx7yTTcjLivE3hrAYGQ4caDMuUP7kP2xYH2YgxS890iFtw7HBFKyEGlWnjpQEIa9nEFiGSSOUAhqswFb1tHuZ2ghYKYUgMo4VQsKws0+1AN4MhZ88cR+WmNLHAq+3sz4tJ0QlzT1UkCgJDpNEjLtwRrG1hdaew6cgU0DLx+M2MP5xZhjMzt82OyRhpYkcWiTG/o7fWj3cGnMgIh2TmHmtS0oCVBAx8DTVfhgeZaPfmrRST1Z1EALKZFKg3Mo5xh4+DOFsYZtC2bX/m0Dz8/ByFh8ZpCVElJI9J6zSImWgtTBejY1/OI8VNRu/pM+pCmvrK5jc08cqiJczb9QkoKRg7sZRBKOl/kPvrw/YuXONsyGKD9dbTpgtynSOxKm5i16uNSGWEHuYOjgzcP7ufLCUS581yKrlf83QHg+W+9z9Ui9eP2rh3BjGwwQCMhH0LTwyVKNC6ua1Ni9AYJxaqAa8XFryOtLfX4+uY+371LIUbsedXN4pwE3N8ZgBQ4wDnRlRnLElelOLmoVzqxu8v6jlncXY+bLmknRJnIDPD88SHl17QFIRSMMOVQtI05fb/pnXjrG9z/e43crkDqkk8JCHFKPgiIZ7zyZtfw1SEnynGXtOPP4QX77pUPxnV+8cccvL8/THTj0pJ5KYxCkSLxUOGvxzhIJj3CWallyf3OH6882xN9qs0Tk+QUA0QAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <span>Twitter</span>
+                </div>
+                <div class="taskbar-clock" id="taskbar-clock"></div>
+                <!-- Add more apps as needed -->
+            </div>
+        </footer>
+        
+        
+    </div>
+
+</body>
+</html>

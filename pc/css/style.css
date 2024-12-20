@@ -1,0 +1,373 @@
+/* IMPORTS */
+@import url('web-browser-parts/top-bar.css');
+@import url('web-browser-parts/side-bar.css');
+@import url('web-browser-parts/bottom-bar.css');
+@import url('web-browser-parts/background.css');
+
+/* GLOBAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block !important;
+}
+
+li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+#desktop-content {
+    min-height: var(--min-screen-height);
+    min-width: var(--min-screen-width);    
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--taskbar-blue);
+    width: 100vw;
+    height: 10vh;
+}
+
+/* MEDIA QUERIES FOR DESKTOP */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#mobile-and-tablet {
+    display: none;
+}
+
+#desktop-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/pc/media-files/images/windows_xp_bliss-wide.jpg');
+}
+
+#yangSoft-web-browser {
+    background-color: var(--browser-gray);
+    transform: translate(-50%, calc(-50% - 21px));
+
+    display: block;
+}
+
+main {
+    color: white;
+    position: relative;
+}
+
+.menu-button {
+    font-size: 500%;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    border-radius: 10%;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.menu-button:hover {
+    box-shadow: 0 0 10px rgb(255, 255, 255); /* Black glow effect */
+}
+
+
+#music-btn {
+    top: 150px;
+    left: 60px;
+}
+
+#videos-btn {
+    top: 230px;
+    right: 80px;
+}
+
+#tour-btn {
+    top: 310px;
+    left: 60px;
+}
+
+#merch-btn {
+    top: 390px;
+    right: 80px;
+}
+
+#about-btn {
+    top: 470px;
+    left: 60px;
+}
+
+
+
+.page {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#address-box {
+    -webkit-user-select: auto; /* Safari */        
+    -moz-user-select: auto; /* Firefox */
+    -ms-user-select: auto; /* IE10+/Edge */
+    user-select: auto; /* Standard */
+}
+
+.section {
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start; 
+    scroll-snap-stop: always;
+    height: var(--browser-height);
+    min-height: var(--min-screen-height);
+}
+
+main#web-browser-content{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    height: var(--browser-height);
+    min-height: var(--min-screen-height);
+    border-left: 1vh solid var(--browser-gray);
+}
+
+#top-bar, #search-bar, #bottom-bar, .section, main#web-browser-content {
+    min-width: var(--min-screen-width);
+    width: var(--browser-width);
+}
+
+#desktop-content #haveuseenhim {
+    background-position: top center;
+}
+
+#desktop-content #pictureperfect {
+    background-position: center center;
+}
+
+#desktop-content #menu {
+    background-position: bottom center;
+}
+
+
+/* Global Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer (Taskbar) Styling */
+#taskbar {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 5vh; /* Typical Windows XP taskbar height */
+    background: linear-gradient(to bottom, #3b6db0, #1e4f95); /* Windows XP taskbar gradient */
+    display: flex;
+    justify-content: center; /* Center the taskbar content */
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+}
+
+.taskbar-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center; /* Center the icons and text inside the taskbar */
+}
+
+.taskbar-app {
+    display: flex; /* Make taskbar-app a flex container */
+    align-items: center; /* Vertically center image and text */
+    justify-content: center; /* Horizontally center image and text */
+    width: 10vw; /* Adjust width to accommodate text */
+    height: 6vh;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background for app icons */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 2px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.taskbar-app a {
+    display: flex; /* Flexbox for the link itself */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    width: 100%; /* Make the link take the full space of .taskbar-app */
+    text-decoration: none; /* Remove underline from the text */
+}
+
+.taskbar-app img {
+    width: 5vw; /* Set a consistent width for all images */
+    object-fit: contain; /* Ensure the image fits within the set dimensions */
+    margin-right: 8px; /* Space between image and text */
+}
+
+.taskbar-app span {
+    color: white;
+    font-family: 'Tahoma', sans-serif; /* Windows XP default font */
+    font-size: 14px;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Hover effect to simulate selection */
+.taskbar-app:hover {
+    transform: translateY(-2px); /* Slight lift when hovered */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Taskbar Clock */
+#taskbar-clock {
+    color: white;
+    font-family: 'Tahoma', sans-serif; /* Windows XP default font */
+    font-size: 14px;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+#taskbar .taskbar-app svg {
+    width: 30px; /* Set consistent width */
+    height: 30px; /* Set consistent height */
+    margin-right: 10px;
+}
+
+#taskbar .taskbar-app image {
+    width: 100%; /* Make the image fill the SVG container */
+    height: 100%;
+}
+
+
+
+/* OTHERS - start */
+/* Loading Screen Styles */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#loading-gif {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.xp-loading-animation {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 20px;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.xp-loading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: green;
+    animation: loading 3s linear forwards;
+}
+
+.taskbar-clock {
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #fff; /* Adjust color as needed */
+}
+
+@keyframes loading {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.desktop-btn {
+    width: 4vw;
+    height: 4vw;
+    
+    background: none;
+    outline: none;
+    border: none;
+
+    position: absolute;
+
+}
+
+.desktop-btn:hover {
+    
+    background: rgba(83, 188, 244, 0.422);
+}
+
+.desktop-btn img {
+    width: 3.5vw;
+    height: 3.5vw;
+}
+
+.desktop-btn p {
+    color: rgb(255, 255, 255);
+    text-shadow: 0vw 0vw 1vw black;
+    font-size: 0.8vw;
+}
+
+#yangSoft-btn {
+    left: 10vw;
+    top: 40vh;
+}
+
+#news-btn {
+    left: 70vw;
+    top: 10vh;
+}
+
+#credits-btn {
+    left: 85vw;
+    bottom: 15vh;
+}
+/* OTHERS - end */
+

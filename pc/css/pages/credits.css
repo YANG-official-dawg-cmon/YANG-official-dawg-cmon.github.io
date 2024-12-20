@@ -1,0 +1,109 @@
+:root {
+    /* Unique variables for credits.css */
+    --credits-width: 60vw; /* Width of the popup relative to viewport width */
+    --credits-aspect-ratio: 7 / 3; /* Set the aspect ratio for the popup (e.g., 7:3) */
+    --scale-factor: 1; /* Default scale factor for scaling */
+
+    --credits-bar-height: 6.5%; /* Top bar height as a percentage of popup height */
+    --credits-bar-width: 73%; /* Top bar spans full width of the popup */
+
+    --credits-button-width: 2.71%; /* Independent button width relative to popup width */
+    --credits-button-height: 10%; /* Independent button height relative to popup width */
+
+    --credits-content-width: 71.1%; /* Width of content box relative to popup width */
+    --credits-content-height: 84.5%; /* Height of content box relative to popup height */
+    --credits-content-top: 10.7%; /* Distance of content box from top of popup */
+    --credits-content-left: 49.2%; /* Center content box horizontally */
+}
+
+#credits {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(var(--scale-factor)); /* Apply scaling */
+    transform-origin: center center; /* Keep scaling relative to the center */
+    width: var(--credits-width); /* Responsive width */
+    aspect-ratio: var(--credits-aspect-ratio); /* Maintain aspect ratio */
+    background: url('/pc/media-files/images/page-sprites/page-sprite-credits.png') no-repeat center center;
+    background-size: contain; /* Maintain aspect ratio of the background image */
+    background-position: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#credits > * {
+    pointer-events: auto; /* Enables the hitbox on the children */
+}
+
+#credits-hitbox {
+    height: 100%;
+    width: 73.59%;
+    left: 13.2%;
+    position: absolute;
+}
+
+#credits-top-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: var(--credits-bar-height); /* Responsive top bar height */
+    width: var(--credits-bar-width); /* Top bar spans full width */
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+    position: absolute;
+    top: 0;
+    left: 13.5%; /* Align to the top-left corner of the popup */
+    box-sizing: border-box;
+    padding: 0 1%; /* Add some padding */
+    opacity: 0%;
+}
+
+#credits-minimize-button1,
+#credits-minimize-button2,
+#credits-close-button {
+    width: var(--credits-button-width); /* Independent button width */
+    height: calc(var(--credits-button-height) * 8); /* Independent button height */
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 1vw; /* Scales font size with viewport width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.1%; /* Spacing between buttons */
+    margin-right: 0.1%;
+    cursor: pointer;
+
+    /* Add this to move buttons collectively */
+    position: relative;
+    left: 10px; /* Adjust to move buttons to the right */
+}
+
+#content-box {
+    position: absolute;
+    top: var(--credits-content-top); /* Distance from top of popup */
+    left: var(--credits-content-left); /* Centered horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: var(--credits-content-width); /* Responsive width */
+    height: var(--credits-content-height); /* Responsive height */
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1vw; /* Scales font size with viewport width */
+    color: #333;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Optional border */
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for the box */
+    padding: 2%; /* Adjust padding */
+    aspect-ratio: var(--credits-aspect-ratio);
+}
+
+#content-box p {
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+    font-size: 0.825vw; /* Scales font size with viewport width */
+    line-height: 1.2; /* Set line spacing */
+    color: #000; /* Text color */
+    font-weight: bolder;
+    margin: 0; /* Remove default margins */
+    white-space: pre-wrap; /* Ensure text wraps like in the image */
+}
