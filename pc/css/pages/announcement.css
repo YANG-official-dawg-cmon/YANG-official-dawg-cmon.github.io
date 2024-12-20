@@ -12,12 +12,12 @@
     --save-button-top: 46.1%; /* Top position of the save button */
     --save-button-left: 39%; /* Left position of the save button */
 
-    --announcement-container-top: 10vh; /* Vertical position */
-    --announcement-container-left: calc(50% - 37%); /* Horizontal position */
+    --announcement-container-top: 5vh; /* Vertical position */
+    --announcement-container-left: calc(50% - 42%); /* Horizontal position */
     --announcement-container-width: var(--announcement-popup-width); /* Width */
     --announcement-container-height: auto; /* Height, can be adjusted if needed */
 
-    --announcement-popup-top: 10vh; /* Vertical position */
+    --announcement-popup-top: 5vh; /* Vertical position */
     --announcement-popup-left: 0vw; /* Horizontal position */
     --announcement-popup-height: auto; /* Height, can be adjusted if needed */
     --announcement-popup-width: 80vw; /* Width of the announcement container relative to viewport width */
