@@ -22,3 +22,5 @@ function checkDeviceAndRedirect() {
        window.location.href = 'https://www.youtube.com/';
     }
 }
+
+checkDeviceAndRedirect();
