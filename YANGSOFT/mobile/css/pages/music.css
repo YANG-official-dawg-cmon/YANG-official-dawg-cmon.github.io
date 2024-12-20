@@ -1,0 +1,35 @@
+/* TYPOGRAPHY */
+
+main p {
+    font-size: 1rem;
+}
+
+h2 {
+    font-style: italic;
+}
+
+
+/* MAIN */
+
+main img {
+    width: 25vw;
+    min-width: calc(var(--container-min-width) * 0.25);
+    max-width: calc(var(--container-max-width) * 0.25);
+}
+
+main li {
+    margin-top: 3vh;
+}
+
+main li a {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+
+    align-items: center;
+}
+
+.dots {
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,12 @@
+h2 {
+    border-bottom: 0.2vh solid white;
+    padding-bottom: 0.6vh;
+    margin-bottom: 2vh;
+    width: 100%;
+}
+
+h1 img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
