@@ -31,4 +31,4 @@ function bringForward(element) {
     }
 }
 
-<script>document.addEventListener("DOMContentLoaded", checkDeviceAndRedirect);</script>
+document.addEventListener("DOMContentLoaded", checkDeviceAndRedirect);
