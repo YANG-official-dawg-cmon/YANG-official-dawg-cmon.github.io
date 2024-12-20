@@ -2,11 +2,11 @@
     /* general */
 
     --purple: rgb(96, 100, 252);
-    --red: rgb(200, 116, 116);
+    --red: rgb(115, 0, 0);
     --blue: rgb(40, 69, 255);
-    --green: rgb(91, 181, 66);
-    --orange: rgb(224, 146, 0);
-    --pink: rgb(188, 79, 218);
+    --green: rgb(67, 131, 49);
+    --orange: rgb(172, 113, 2);
+    --pink: rgb(148, 63, 171);
     --gray: rgb(248,244,244);
     --page-color: var(--purple);
     --background-color: black;
