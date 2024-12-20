@@ -3,7 +3,7 @@ let content = document.getElementById('container');
 let startY = 0;
 let currentY = 0;
 let isSwiping = false;
-let threshold = window.innerHeight / 1.0; // Minimum swipe distance to unlock the content
+let threshold = window.innerHeight / 5.0; // Minimum swipe distance to unlock the content
 
 // Add event listeners for both touch and mouse
 document.addEventListener('touchstart', handleStart, false);
