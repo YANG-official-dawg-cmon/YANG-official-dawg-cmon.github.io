@@ -13,12 +13,12 @@ function checkDeviceAndRedirect() {
 
     if (isMobile && isIndexPage) {
         // If on mobile device and on index page, redirect to mobile
-        window.location.href = '/mobile/PICTUREPERFECT.html';
+        window.location.href = 'https://haveuseenhim.com/YANGSOFT/mobile.html';
     } else if (!isMobile && isMobilePage) {
         // If on desktop and on mobile page, redirect to index
-        window.location.href = '/pc/haveuseenhim.html';
+        window.location.href = 'https://haveuseenhim.com/YANGSOFT/pc.html';
     } else {
         // If no redirect is needed, proceed with normal page load
-        proceedWithNormalLoad();
+       window.location.href = 'https://www.youtube.com/';
     }
 }
