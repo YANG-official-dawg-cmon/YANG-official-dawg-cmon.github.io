@@ -25,7 +25,6 @@ const buttons = {
     tour: document.getElementById("tour-btn"),
     merch: document.getElementById("merch-btn"),
     about: document.getElementById("about-btn"),
-    credits: document.getElementById("about-btn")
 };
 
 const pages = {
@@ -540,3 +539,7 @@ document.getElementById("credits-close-button").addEventListener("click", closeC
 function closeCredits() {
     credits.style.display = "none";
 }
+
+document.getElementById("credits-btn").addEventListener("click", function() {
+    credits.style.display = "flex";
+})
