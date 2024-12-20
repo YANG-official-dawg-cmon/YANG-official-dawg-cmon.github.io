@@ -1,26 +1,27 @@
 function checkDeviceAndRedirect() {
-    // Show loading screen during check and potential redirect
-    // document.getElementById("loading-screen").style.display = "block";
-    // document.body.style.display = "none";
+    try {
+        // Check if the device is mobile
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-    // Check if the device is mobile
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    
-    // Get current page
-    const currentPage = window.location.pathname;
-    const isIndexPage = currentPage.endsWith('pc.html') || currentPage === '/';
-    const isMobilePage = currentPage.endsWith('mobile.html');
+        // Get the current page path
+        const currentPage = window.location.pathname;
 
-    if (isMobile && isIndexPage) {
-        // If on mobile device and on index page, redirect to mobile
-        window.location.href = 'https://www.google.com/';
-    } else if (!isMobile && isMobilePage) {
-        // If on desktop and on mobile page, redirect to index
-        window.location.href = 'https://langara.ca/admissions/after-you-apply/index.html';
-    } else {
-        // If no redirect is needed, proceed with normal page load
-       window.location.href = 'https://www.youtube.com/';
+        if (isMobile && !currentPage.endsWith('mobile.html')) {
+            // If the device is mobile and not already on mobile.html, redirect to mobile.html
+            window.location.href = '/mobile.html';
+        } else if (!isMobile && !currentPage.endsWith('pc.html')) {
+            // If the device is not mobile and not already on pc.html, redirect to pc.html
+            window.location.href = '/pc.html';
+        } else {
+            // If already on the correct page, do nothing
+            return;
+        }
+    } catch (error) {
+        console.error('Error occurred during redirection check:', error);
+        // Fallback to mobile.html in case of an error or undetected device
+        window.location.href = '/mobile.html';
     }
 }
 
+// Execute the redirection check
 checkDeviceAndRedirect();
