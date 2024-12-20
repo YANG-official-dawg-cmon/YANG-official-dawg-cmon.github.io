@@ -31,4 +31,4 @@ function bringForward(element) {
     }
 }
 
-document.addEventListener("DOMContentLoaded", checkDeviceAndRedirect);
+
