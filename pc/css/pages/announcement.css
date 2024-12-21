@@ -117,7 +117,7 @@
     aspect-ratio: var(--announcement-aspect-ratio); /* Maintain aspect ratio */
     background-size: contain;
     z-index: 2; /* Ensure it's on top */
-    display: none; /* Ensure it is hidden by default */
+    display: block; /* Ensure it is hidden by default */
     pointer-events: none; /* Make the popup itself non-interactive */
 }
 
