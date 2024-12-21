@@ -276,7 +276,7 @@ aboutButton.addEventListener('click', () => {
     }
 });
 
-// Initialize Draggable for the  Announcement popup
+// Initialize Draggable for the Announcement popup
 const newsBtn = document.getElementById('news-btn');
 const announcementPopup = document.getElementById('announcement-popup');
 const announcementCloseButton = document.getElementById('close-button');
@@ -286,6 +286,11 @@ const saveButton = document.getElementById('save-button');
 // Make the announcement popup draggable
 new Draggable(announcementPopup, announcementTopBar);
 
+// Show the announcement popup when the page loads
+window.addEventListener('load', function () {
+    announcementPopup.style.display = 'block';
+});
+// Reopen the popup when the news button is clicked
 newsBtn.addEventListener('click', function () {
     announcementPopup.style.display = 'block';
 });
