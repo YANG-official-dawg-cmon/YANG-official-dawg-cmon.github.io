@@ -38,7 +38,8 @@
 #announcement-container > #announcement-hitbox,
 #announcement-container > #foreground-image-container,
 #announcement-container > #close-button,
-#announcement-container > #save-button,
+/* #announcement-container > #save-button, */
+#announcement-container > #access-files-button,
 #announcement-container > #announcement-top-bar {
     pointer-events: auto; /* Restore interactivity for specific child elements */
 }
@@ -49,7 +50,7 @@
     left: var(--announcement-foreground-left);
     width: var(--announcement-foreground-width);
     height: 88%;
-    background: url('/pc/media-files/images/page-sprites/SAAVE.png') no-repeat center center;
+    background: url('/pc/media-files/images/page-sprites/ANNOUCEMENT-PC.webp') no-repeat center center;
     background-size: 100% 100%;
     z-index: 2;
 }
@@ -67,24 +68,43 @@
     cursor: pointer;
 }
 
-#save-button {
+/* #save-button {
     opacity: 0;
     position: absolute;
-    top: var(--save-button-top); /* Use the defined top position */
-    left: var(--save-button-left); /* Use the defined left position */
-    width: var(--save-button-width); /* Use the defined width */
-    height: var(--save-button-height); /* Use the defined height */
+    top: var(--save-button-top); 
+    left: var(--save-button-left); 
+    width: var(--save-button-width); 
+    height: var(--save-button-height); 
     background-color: white;
     color: black;
     font-family: "Courier New", Courier, "Lucida Console", "MS Sans Serif", "System", sans-serif;
-    font-size: 1vw; /* Scales font size with viewport width */
+    font-size: 1vw; 
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 3; /* Ensure it's on top of the images */
-    border: 1px solid #ccc; /* Optional border */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    z-index: 3; 
+    border: 1px solid #ccc; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+} */
+
+#access-files-button {
+    position: relative;
+    left: 25%;
+    top: 50%;
+    z-index: 3;
+}
+
+#access-files-button:visited, #access-files-button:link, #access-files-button{
+    color: #0000EE;
+}
+
+#access-files-button:active {
+    color: #0063ee;
+}
+
+#access-files-button:active {
+    color: purple;
 }
 
 #announcement-top-bar {

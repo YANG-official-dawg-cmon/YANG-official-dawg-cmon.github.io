@@ -97,8 +97,6 @@ header  {
 
 
 
-
-
 /* TYPOGRAPHY */
 .overlay h1 p{
     font-family: 'Times New Roman', Times, serif;
@@ -116,10 +114,14 @@ h2 {
     font-size: var(--h2-font-size);
 }
 
+#news h1 p, #news h2{
+    color: var(--page-color);
+}
+
 /* HEADER */
 
 header {
-    background-image: url("/mobile/images/mobile_news_BACKGROUND.png");
+    background-image: url("/mobile/images/MOBILE-ANNOUNCEMENT.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -136,6 +138,7 @@ header h1 {
     position: absolute;
     top: 2%;
     left: 2%;
+    width: 75%;
 }
 
 header h2 {

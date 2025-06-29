@@ -3,10 +3,10 @@
     --popup-width: 23vw; /* 50% of the viewport width */
     --popup-height: auto; /* Height will be calculated to maintain aspect ratio */
     --merch-top-bar-height: 20%; /* Adjusted top-bar height */
-    --close-button-size: 9%; /* Adjusted close button size */
+    --close-button-size: 10%; /* Adjusted close button size */
     --ok-button-width: 32%; /* 15% of the popup width */
-    --ok-button-height: 19%; /* 7% of the popup height */
-    --ok-button-bottom-offset: 15%; /* Adjusted offset for the OK button */
+    --ok-button-height: 17%; /* 7% of the popup height */
+    --ok-button-bottom-offset: 10%; /* Adjusted offset for the OK button */
     --scale-factor: 1; /* Default scale factor for scaling */
 }
 
@@ -69,7 +69,7 @@
     cursor: pointer;
     position: absolute;
     right: 2.5%; /* Position close button relative to the container */
-    top: 51%; /* Center the close button vertically in the top bar */
+    top: 58%; /* Center the close button vertically in the top bar */
     transform: translateY(-50%); /* Adjust for true vertical centering */
 }
 

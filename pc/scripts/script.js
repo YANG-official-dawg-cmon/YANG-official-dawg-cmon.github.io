@@ -299,9 +299,9 @@ announcementCloseButton.addEventListener('click', function () {
     announcementPopup.style.display = 'none';
 });
 
-saveButton.addEventListener('click', function() {
-    window.open('https://distrokid.com/hyperfollow/yang16/picture-perfect--4', '_blank');
-});
+// saveButton.addEventListener('click', function() {
+//     window.open('https://distrokid.com/hyperfollow/yang16/picture-perfect--4', '_blank');
+// });
 
 // Initialize Draggable for the  ABOUT popup
 const aboutTopBar = document.getElementById('aboutTop-bar');
