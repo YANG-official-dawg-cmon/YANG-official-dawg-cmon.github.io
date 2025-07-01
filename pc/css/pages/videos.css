@@ -95,7 +95,7 @@ body {
     height: var(--videos-content-height); /* Responsive height */
     background-color: white;
     font-family: Arial, sans-serif;
-    font-size: 1vw; /* Scales font size with viewport width */
+    font-size: 1.1vw; /* Scales font size with viewport width */
     color: #333;
     box-sizing: border-box;
     text-align: left;
