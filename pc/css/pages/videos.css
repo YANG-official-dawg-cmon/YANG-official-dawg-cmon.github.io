@@ -18,9 +18,9 @@
     --videos-content-left: 67.42%; /* Center content box horizontally */
 }
 
-body {
+/* body {
     background-color: black;
-}
+} */
 
 #videos {
     display: none;

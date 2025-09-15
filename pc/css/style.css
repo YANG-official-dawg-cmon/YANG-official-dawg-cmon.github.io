@@ -112,8 +112,6 @@ main {
     left: 60px;
 }
 
-
-
 .page, #announcement-popup {
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */

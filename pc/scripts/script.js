@@ -345,6 +345,23 @@ popupIsOpen = false; // To track whether the popup is open or closed
 // Initialize the draggable feature
 new Draggable(tourPopup, tourTopBar);
 
+// Initialize animation css for all tour event items
+
+const eventLiItems = document.getElementsByClassName("event");
+const eventLocation = document.getElementsByClassName("tour-location");
+const eventDate = document.getElementsByClassName("tour-date");
+for (let i = 0; i < eventLiItems.length; i++) {
+    eventLiItems[i].style.animation = "fadeInEvent 0.2s " + (2 + (0.3*i)) + "s forwards";
+}
+for (let i = 0; i < eventLocation.length; i++) {
+    eventLocation[i].style.animationDelay = (2 + (0.3*i)) + "s";
+}
+for (let i = 0; i < eventDate.length; i++) {
+    eventDate[i].style.animationDelay = (2 + (0.3*i)) + "s";
+}
+
+
+
 // Function to show the popup and trigger animations
 function showTourPopup() {
     // Show the tour popup and trigger animations after a click

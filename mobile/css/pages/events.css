@@ -1,10 +1,31 @@
 h2 {
     border-bottom: 0.2vh solid white;
     padding-bottom: 0.6vh;
-    margin-bottom: 2vh;
     width: 100%;
 }
 
 h1 img {
     display: block;
+}
+
+ul li {
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+
+ul li a .event-name{
+    text-decoration: underline;
+    color: #0000EE;
+}
+
+ul li a:visited .event-name{
+    color: #551A8B;
+}
+
+ul li a:hover .event-name{
+    color: #3636f5;
+}
+
+ {
+    color: white;
 }
