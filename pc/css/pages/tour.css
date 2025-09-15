@@ -19,9 +19,9 @@
     --tour-content-left: 48.9%; /* Center content box horizontally */
 }
 
-body {
+/* body {
     background-color: white;
-}
+} */
 
 /* Tour Popup */
 #tour-popup {
@@ -40,6 +40,7 @@ body {
     background-position: center;
     z-index: 2;
     pointer-events: none;
+    overflow: hidden;
 }
 
 #tour-popup > * {
@@ -102,6 +103,13 @@ body {
     text-align: left;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for the box */
     padding: 2%; /* Adjust padding */
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
+}
+
+#tour-content-box .line, .event{
+    margin-bottom: 10px;
 }
 
 /* Line 1 and Line 2 animation */
@@ -196,7 +204,7 @@ body {
 }
 
 /* Set delays for each event */
-#event1 {
+/* #event1 {
     animation: fadeInEvent 0.2s 2s forwards;
 }
 
@@ -206,7 +214,7 @@ body {
 
 #event3 {
     animation: fadeInEvent 0.2s 2.6s forwards;
-}
+} */
 
 /* Fade-in animation for events */
 @keyframes fadeInEvent {
@@ -228,7 +236,7 @@ body {
 }
 
 /* Set delays for each p tag to match event delay */
-#event1 p {
+/* #event1 p {
     animation-delay: 2s;
 }
 
@@ -238,7 +246,7 @@ body {
 
 #event3 p {
     animation-delay: 2.6s;
-}
+} */
 
 /* Fade-in animation for the text in p tags */
 @keyframes fadeInText {
@@ -258,6 +266,13 @@ body {
     text-decoration: none;
 }
 
-.event-link:hover {
+.tour-location a {
+    color: white;
+    text-decoration: none;
+}
+
+.event-link:hover, .tour-location a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+
+
